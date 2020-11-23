@@ -1,4 +1,6 @@
 string = input("--Please enter the string-- \n").split('-')
 string.sort()
+result = ''
 for word in string:
-    print()
+    result += word+'-'
+print(result)
