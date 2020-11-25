@@ -1,12 +1,7 @@
-def ings(s) :
-	l = len(s)
-	if ( l<3 ) :
-		pass
-	elif ( s[-3:] == "ing" ) :
-		s = s + "ly"
-	else :
-		s = s + "ing"
-	return s	
-	
-
-print(ings("jh"))
+string = input("Please enter the string \n")
+if len(string)>=3:
+    if string[-3:]=="ing":
+        string += 'ly'
+    else:
+        string +="ing"
+print(string)
