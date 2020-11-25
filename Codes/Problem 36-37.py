@@ -11,13 +11,14 @@ for i in range(len(string)) :
 print(startIndex,endIndex,len(string))
 if startIndex<endIndex:
     for i in range(len(string)):
-        while i>=startIndex and i < endIndex:
+        while i>=startIndex and i <= endIndex:
             print(i)
             i += 1
             flag = 1
             print(result)
         if flag == 1:
             result += ' good'
+        print(result)
         result += " "+string[i]
 
 
